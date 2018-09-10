@@ -3,7 +3,9 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/views/Auth/login'
 import Test from '../views/Test/test'
+import Dashboard from '@/layout/Dashboard'
 
+import List from '@/views/Department/list'
 Vue.use(Router)
 
 const router = new Router({
@@ -16,6 +18,16 @@ const router = new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    // 诊所相关页面
+    {
+      path: '/clinic',
+      component: Dashboard,
+      children: [{
+        path: '/clinic/department',
+        name: 'departmentList',
+        component: List
+      }]
     },
     {
       path: '/test',
@@ -31,9 +43,9 @@ const router = new Router({
 })
 
 router.beforeEach((to, form, next) => {
-  console.log(to)
-  console.log(form)
-  console.log(next)
+  // console.log(to)
+  // console.log(form)
+  // console.log(next)
   next()
 })
 
