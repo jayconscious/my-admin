@@ -20,3 +20,26 @@ module.exports = {
     image: 'xlink:href'
   }
 }
+// config vue loader
+// { loaders:
+//   { css: [ 'vue-style-loader', [Object] ],
+//     postcss: [ 'vue-style-loader', [Object] ],
+//     less: [ 'vue-style-loader', [Object], [Object] ],
+//     sass: [ 'vue-style-loader', [Object], [Object] ],
+//     scss: [ 'vue-style-loader', [Object], [Object] ],
+//     stylus: [ 'vue-style-loader', [Object], [Object] ],
+//     styl: [ 'vue-style-loader', [Object], [Object] ] },
+//  cssSourceMap: true,
+//  cacheBusting: true,
+//  transformToRequire:
+//   { 
+//     video: [ 'src', 'poster' ],
+//     source: 'src',
+//     img: 'src',
+//     image: 'xlink:href' 
+//   } 
+// }
+
+
+// dev output what ?
+// 

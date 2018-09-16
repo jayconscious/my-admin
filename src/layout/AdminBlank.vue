@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="black_wrap">
     <router-view></router-view>
   </div>
 </template>
@@ -18,6 +18,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .black_wrap {
+    position: relative;
+  }
 </style>

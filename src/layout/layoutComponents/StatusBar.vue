@@ -1,7 +1,5 @@
 <template>
-  <!-- <div class="status-wrap">
-  </div> -->
-  <el-header style="text-align: right; font-size: 12px; width: 100%;">
+  <el-header class="status_bar" style="text-align: right; font-size: 12px; width: 100%;">
     <h2>这是顶部状态栏</h2>
     <el-dropdown>
       <i class="el-icon-setting" style="margin-right: 15px"></i>
@@ -29,10 +27,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .status-wrap {
+  .status_bar {
     position: absolute;
-    width: 100%;
-    height: 100px;
+    right: 0;
+    top: 0;
+    line-height: 5em;
+    background-color: #cccccc;
+    border: 1px solid black;
+    & > h2{
+      display: inline-block;
+    }
   }
 </style>
 

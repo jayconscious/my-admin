@@ -3,15 +3,16 @@
     ref="table"
     :data="data"
     v-bind="$attrs"
+    v-on="$listeners"
     >
-    <!-- 没有slot -->
     <template v-for="(item, i) in columns">
+      <!-- 没有slot -->
       <el-table-column
         v-if="!item.hasOwnProperty('slot')"
         :key="i"
         v-bind="item">
       </el-table-column>
-    <!-- 有slot -->
+      <!-- 有slot -->
       <el-table-column
         v-if="item.hasOwnProperty('slot')"
         :key="i"
@@ -45,8 +46,11 @@ export default {
   },
   components: {},
   computed: {},
-  // created: {},
-  // mounted: {},
+  created() {
+    // console.log(this.$attrs)
+    // this.$attrs = {}
+  },
+  mounted() {},
   methods: {}
 }
 </script>
